@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход</title>
+  <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+  <div class="login-container" id="login-container">
+    <div class="image-container">
+      <img src="https://top-programming.ru/wp-content/uploads/2023/05/7.1.-kak-osvoit-programmirovanie-s-nulya.png" alt="School Logo">
+    </div>
+    <div class="form-container">
+      <h2>Вход</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Логин:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Войти</button>
+      </form>
+      <div class="theme-switcher">
+        <label for="theme-toggle">Тема:</label>
+        <input type="checkbox" id="theme-toggle">
+      </div>
+    </div>
+  </div>
+  <script src="loginjs.js"></script>
+</body>
+</html>

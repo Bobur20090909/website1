@@ -1,0 +1,73 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: slideDown 0.5s ease-out;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Уменьшаем отступы кнопок */
+    margin: 0 5px; /* Уменьшаем отступы между кнопками */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 100%; /* Ширина контейнера занимает всю доступную ширину */
+    margin: 20px auto;
+    padding: 0 10px; /* Уменьшаем внутренние отступы */
+    animation: slideRight 1s ease-out;
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-btn {
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px; /* Увеличиваем отступы кнопки для входа */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Меняем направление flex на колонки */
+        align-items: center; /* Выравниваем элементы по центру */
+    }
+
+    nav a {
+        margin: 5px 0; /* Увеличиваем отступы между кнопками */
+    }
+
+    .login-btn {
+        padding: 15px 20px; /* Увеличиваем отступы кнопки для входа */
+    }
+}
